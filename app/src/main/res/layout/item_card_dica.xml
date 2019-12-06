@@ -1,0 +1,58 @@
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/txt_item_card_assunto_dica"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_adapter_assunto_dica"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_item_card_descricao_dica"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_adapter_descricao_dica" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/button"
+                style="@style/botao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Continuar Lendo" />
+
+            <Button
+                android:id="@+id/btn_card_editar_dica"
+                style="@style/botao2"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_toStartOf="@id/btn_card_deletar_dica"
+                android:drawableLeft="@drawable/ic_edit" />
+
+            <Button
+                android:id="@+id/btn_card_deletar_dica"
+                style="@style/botao2"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:drawableLeft="@drawable/ic_delete3" />
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

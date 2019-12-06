@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "754295402970",
+    "firebase_url": "https://penha3-d491c.firebaseio.com",
+    "project_id": "penha3-d491c",
+    "storage_bucket": "penha3-d491c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:754295402970:android:13c1a4fdfe59e1ab8290e3",
+        "android_client_info": {
+          "package_name": "br.edu.ifrs.projetoexemplomd"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "754295402970-ugpb83lij6sp7j8vcpd0m0uo0bsujnat.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "br.edu.ifrs.projetoexemplomd",
+            "certificate_hash": "86dc58190a3c9027efaed32472036080c3849456"
+          }
+        },
+        {
+          "client_id": "754295402970-7ee6lbtp0r8emg6sqmlo7ldcotqq58j9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCdsvQiQVTvis_mhDkohC_Ea8c16OG9KsM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "754295402970-7ee6lbtp0r8emg6sqmlo7ldcotqq58j9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

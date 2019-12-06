@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="br.edu.ifrs.projetoexemplomd.ui.home.HomeFragment"
+        android:label="@string/menu_drawer_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_ver_dicas"
+        android:name="br.edu.ifrs.projetoexemplomd.ui.dica.DicaFragment"
+        android:label="@string/menu_drawer_ver_dicas"
+        tools:layout="@layout/fragment_list_dica" />
+
+    <activity
+        android:id="@+id/nav_cadastro_usuario"
+        android:name="br.edu.ifrs.projetoexemplomd.ui.activities.CadastroUsuarioActivity"
+        android:label="@string/txt_header_navigation_cadastro"
+        tools:layout="@layout/activity_cadastrar_usuario" />
+
+    <fragment
+        android:id="@+id/nav_phone"
+        android:name="br.edu.ifrs.projetoexemplomd.ui.telefone.TelefoneFragment"
+        android:label="@string/menu_drawer_telefones_uteis"
+        tools:layout="@layout/fragment_list_telefone" />
+
+    <fragment
+        android:id="@+id/nav_info"
+        android:name="br.edu.ifrs.projetoexemplomd.ui.info.InfoFragment"
+        android:label="@string/menu_drawer_info"
+        tools:layout="@layout/fragment_info" />
+
+    <fragment
+        android:id="@+id/nav_cadastro_dica"
+        android:name="br.edu.ifrs.projetoexemplomd.ui.dica.CadastrarDicaFragment"
+        android:label="@string/menu_drawer_cadastrar_dica"
+        tools:layout="@layout/fragment_cadastrar_dica" />
+
+    <fragment
+        android:id="@+id/nav_termos_de_uso"
+        android:name="br.edu.ifrs.projetoexemplomd.ui.info.TermsOfServiceFragment"
+        android:label="@string/menu_drawer_termos_de_uso"
+        tools:layout="@layout/fragment_terms_of_service" />
+
+    <fragment
+        android:id="@+id/nav_politica_privacidade"
+        android:name="br.edu.ifrs.projetoexemplomd.ui.info.PrivacyPolicyFragment"
+        android:label="@string/menu_drawer_politica_privacidade"
+        tools:layout="@layout/fragment_privacy_policy" />
+
+    <fragment
+        android:id="@+id/nav_perfil"
+        android:name="br.edu.ifrs.projetoexemplomd.ui.perfil.PerfilFragment"
+        android:label="@string/menu_drawer_perfil"
+        tools:layout="@layout/fragment_perfil" />
+
+    <fragment
+        android:id="@+id/nav_configuracao"
+        android:name="br.edu.ifrs.projetoexemplomd.ui.configuracao.ConfiguracaoFragment"
+        android:label="@string/menu_drawer_perfil"
+        tools:layout="@layout/fragment_configuracao" />
+
+    <fragment
+        android:id="@+id/nav_cadastrar_amigo"
+        android:name="br.edu.ifrs.projetoexemplomd.ui.amigo.CadastrarAmigoFragment"
+        android:label="@string/menu_drawer_cadastrar_amigo"
+        tools:layout="@layout/fragment_cadastrar_amigo" />
+
+    <fragment
+        android:id="@+id/nav_listar_amigos"
+        android:name="br.edu.ifrs.projetoexemplomd.ui.amigo.AmigoListFragment"
+        android:label="@string/menu_drawer_ver_amigos"
+        tools:layout="@layout/fragment_list_amigo" />
+
+</navigation>

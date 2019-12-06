@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/text_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
+        android:text="Aplicativo desenvolvido para a disciplina de Programação para Web do curso superior de Tecnologia em Sistemas para Internet do Instituto Federal de Ciência e Tecnologia - IFRS Campus Porto Alegre - RS. \n\n
+        Este é um aplicativo para apoio ao enfrentamento da violência, assédio ou atrevimentos cometidos por homens.\n\n
+        Na sessão de 'Dicas' há algumas sugestões de atitudes que podem ajudar as mulheres em determinadas situações.\n\n Há também a sessão 'Jogo' que, de modo bastante interativo, ajuda a mulher a identificar se está passando por um relacionamento abusivo."
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <include layout="@layout/action_bar_bottom_navigation" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

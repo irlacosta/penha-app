@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">Penha App</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Penha App</string>
+    <string name="nav_header_subtitle">Apoio à Mulher</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings_logout">Sair</string>
+    <string name="action_settings_info">Sobre</string>
+
+    <string name="menu_drawer_home">Início</string>
+    <string name="menu_drawer_perfil">Perfil</string>
+    <string name="menu_drawer_cadastrar_dica">Cadastrar Dicas</string>
+    <string name="menu_drawer_ver_dicas">Dicas</string>
+    <string name="menu_drawer_cadastrar_usuario">Cadastre-se aqui</string>
+    <string name="menu_drawer_cadastrar_amigo">Cadastrar Amigo</string>
+    <string name="menu_drawer_ver_amigos">Amigos Cadastrados</string>
+    <string name="menu_drawer_telefones_uteis">Telefones Úteis</string>
+    <string name="menu_drawer_oonfig">Configurações</string>
+    <string name="menu_drawer_info">Sobre</string>
+    <string name="menu_drawer_termos_de_uso">Termos de Uso</string>
+    <string name="menu_drawer_politica_privacidade">Políticas de Privacidade</string>
+    <string name="txt_btn_login_acessar">Entrar</string>
+    <string name="login_titulo">LOGIN</string>
+    <string name="txt_login_cadastar_email">e-mail</string>
+    <string name="txt_login_cadastrar_senha">Senha</string>
+    <string name="txt_login_cadastrar_confirmar_senha">Confirme sua senha</string>
+    <string name="txt_header_navigation_cadastro">Criar Perfil</string>
+    <string name="txt_btn_visitar">Acessar sem Cadastro</string>
+    <string name="btnCancelar">CANCELAR</string>
+    <string name="btn_salvar">SALVAR</string>
+    <string name="txt_nav_bottom_home">Home</string>
+    <string name="txt_nav_bottom_perfil">Perfil</string>
+    <string name="txt_nav_bottom_settings">Configurações</string>
+
+
+    <string name="card_jogar">Quiz</string>
+    <string name="card_jogar_second">Você está em um relacionamento abusivo? Descubra aqui!</string>
+    <string name="card_dicas">Dicas</string>
+    <string name="card_dicas_second">Informação e segurança</string>
+    <string name="card_amigos">Amigos</string>
+    <string name="card_amigos_second">Cadastre 5 amigos para acionar quando precisar de ajuda</string>
+    <string name="card_mapa">Mapa</string>
+    <string name="card_mapa_second">Locais para ajuda e apoio à mulher</string>
+    <string name="card_telefones">Telefones</string>
+    <string name="card_telefones_second">Telefones Úteis</string>
+
+    <string name="txt_adapter_list_telefone_local">Local</string>
+    <string name="txt_adapter_list_telefone_endereco">Endereço</string>
+    <string name="txt_adapter_list_telefone_ddd">DDD</string>
+    <string name="txt_adapter_list_telefone_numero">Telefone</string>
+    <string name="txt_adapter_assunto_dica">Assunto</string>
+    <string name="txt_adapter_descricao_dica">Descrição</string>
+    <string name="btn_ler">Continuar Lendo</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
