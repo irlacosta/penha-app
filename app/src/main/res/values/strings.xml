@@ -44,6 +44,9 @@
     <string name="card_mapa_second">Locais para ajuda e apoio à mulher</string>
     <string name="card_telefones">Telefones</string>
     <string name="card_telefones_second">Telefones Úteis</string>
+    <string name="card_perfil">Perfil</string>
+    <string name="card_perfil_second">Configurações do seu perfil</string>
+
 
     <string name="txt_adapter_list_telefone_local">Local</string>
     <string name="txt_adapter_list_telefone_endereco">Endereço</string>

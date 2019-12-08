@@ -27,6 +27,7 @@ public class HomeFragment extends Fragment { //implements View.OnClickListener{ 
     private CardView card_dicas;
     private CardView card_telefones;
     private CardView card_mapa;
+    private CardView card_perfil;
     private NavController navController;
 
     //método que caracteriza o fragmento onCreateView
@@ -57,6 +58,7 @@ public class HomeFragment extends Fragment { //implements View.OnClickListener{ 
         card_dicas = view.findViewById(R.id.card_three);
         card_telefones = view.findViewById(R.id.card_four);
         card_mapa = view.findViewById(R.id.card_five);
+        card_perfil = view.findViewById(R.id.card_six);
     }
 
     private void setClick() {
@@ -90,6 +92,13 @@ public class HomeFragment extends Fragment { //implements View.OnClickListener{ 
             public void onClick(View v) {
                 Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("geo:0,0? q=-30.0264276,-51.2233058(IFRS POA)?z=15"));
                     startActivity(intent);
+            }
+        });
+        card_perfil.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //navegar para tela do perfil já cadastrado
+                Toast.makeText(getContext(), "Clicou em Perfil", Toast.LENGTH_LONG).show();
             }
         });
     }
