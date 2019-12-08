@@ -78,7 +78,7 @@ public class HomeFragment extends Fragment { //implements View.OnClickListener{ 
         card_dicas.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                navController.navigate(R.id.nav_ver_dicas);
+                navController.navigate(R.id.nav_listar_dicas);
             }
         });
         card_telefones.setOnClickListener(new View.OnClickListener() {
@@ -97,8 +97,7 @@ public class HomeFragment extends Fragment { //implements View.OnClickListener{ 
         card_perfil.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //navegar para tela do perfil já cadastrado
-                Toast.makeText(getContext(), "Clicou em Perfil", Toast.LENGTH_LONG).show();
+                navController.navigate(R.id.nav_perfil);
             }
         });
     }

@@ -8,14 +8,12 @@
             android:id="@+id/nav_home"
             android:icon="@drawable/ic_home"
             android:title="@string/menu_drawer_home" />
-        <item
-            android:id="@+id/nav_ver_dica"
-            android:icon="@drawable/ic_categoria"
-            android:title="@string/menu_drawer_ver_dicas" />
+
         <item
             android:id="@+id/nav_perfil"
             android:icon="@drawable/ic_perfil"
             android:title="@string/menu_drawer_perfil" />
+
         <item
             android:id="@+id/nav_cadastro_usuario"
             android:icon="@drawable/ic_person"
@@ -37,10 +35,6 @@
         android:id="@+id/drawer_nav_area_restrita"
         android:checkableBehavior="none">
 
-        <item
-            android:id="@+id/nav_cadastro_dica"
-            android:icon="@drawable/ic_dicas"
-            android:title="@string/menu_drawer_cadastrar_dica" />
         <item
             android:id="@+id/nav_termos_de_uso"
             android:title="@string/menu_drawer_termos_de_uso" />
