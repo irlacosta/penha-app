@@ -61,8 +61,8 @@ public class MainActivity extends AppCompatActivity implements CadastrarDicaFrag
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.nav_home, R.id.nav_ver_dica, R.id.nav_perfil, R.id.nav_cadastro_usuario,
-                R.id.nav_phone, R.id.nav_info, R.id.nav_cadastro_dica, R.id.nav_termos_de_uso,
+                R.id.nav_home, R.id.nav_listar_dicas, R.id.nav_perfil, R.id.nav_cadastro_usuario,
+                R.id.nav_phone, R.id.nav_info, R.id.nav_cadastrar_dica, R.id.nav_termos_de_uso,
                 R.id.nav_politica_privacidade)
                 .setDrawerLayout(drawer)
                 .build();

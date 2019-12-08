@@ -59,8 +59,12 @@ public class DicaFragment extends Fragment implements BottomNavigationView.OnNav
                              @Nullable Bundle savedInstanceState) {
         //carrega o fragmento_list e associa com a variável root
         View root = inflater.inflate(R.layout.fragment_list_dica, container, false);
-        recyclerView = root.findViewById(R.id.recyclerViewDica);
         //configurar o adapter - que formata que o layout de cada item do recycler
+        recyclerView = root.findViewById(R.id.recyclerViewDica);
+        //configura o layout do fab para cadastro de dicas
+        fabDica = root.findViewById(R.id.fab_dica);
+        navController = Navigation.findNavController(getActivity(), R.id.nav_host_fragment);
+        onFabClickListener();
 
         //view que representa os botoes da parte de baixo da tela(bottom navigation) para conseguir acessa-lo
         BottomNavigationView bottomNavigationView = (BottomNavigationView) root.findViewById(R.id.bottomNav);
@@ -161,6 +165,14 @@ public class DicaFragment extends Fragment implements BottomNavigationView.OnNav
             @Override
             public void onFailure(@NonNull Exception e) {
                 Toast.makeText(getContext(), "Não foi possível excluir esta dica!", Toast.LENGTH_SHORT).show();
+            }
+        });
+    }
+    public void onFabClickListener() {
+        fabDica.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                navController.navigate(R.id.nav_cadastrar_dica);
             }
         });
     }

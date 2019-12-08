@@ -11,12 +11,6 @@
         android:label="@string/menu_drawer_home"
         tools:layout="@layout/fragment_home" />
 
-    <fragment
-        android:id="@+id/nav_ver_dicas"
-        android:name="br.edu.ifrs.projetoexemplomd.ui.dica.DicaFragment"
-        android:label="@string/menu_drawer_ver_dicas"
-        tools:layout="@layout/fragment_list_dica" />
-
     <activity
         android:id="@+id/nav_cadastro_usuario"
         android:name="br.edu.ifrs.projetoexemplomd.ui.activities.CadastroUsuarioActivity"
@@ -36,7 +30,7 @@
         tools:layout="@layout/fragment_info" />
 
     <fragment
-        android:id="@+id/nav_cadastro_dica"
+        android:id="@+id/nav_cadastrar_dica"
         android:name="br.edu.ifrs.projetoexemplomd.ui.dica.CadastrarDicaFragment"
         android:label="@string/menu_drawer_cadastrar_dica"
         tools:layout="@layout/fragment_cadastrar_dica" />
@@ -76,5 +70,11 @@
         android:name="br.edu.ifrs.projetoexemplomd.ui.amigo.AmigoListFragment"
         android:label="@string/menu_drawer_ver_amigos"
         tools:layout="@layout/fragment_list_amigo" />
+
+    <fragment
+        android:id="@+id/nav_listar_dicas"
+        android:name="br.edu.ifrs.projetoexemplomd.ui.dica.DicaFragment"
+        android:label="@string/menu_drawer_ver_dicas"
+        tools:layout="@layout/fragment_list_dica" />
 
 </navigation>
