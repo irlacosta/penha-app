@@ -45,7 +45,6 @@ public class DicaFragment extends Fragment implements BottomNavigationView.OnNav
     //definição da variável que está visível no layout do fragmento
     private RecyclerView recyclerView;
     private AdapterDicas adapterDicas;
-    private FloatingActionButton fabDica;
     private NavController navController;
 
     public static DicaFragment newInstance() {
@@ -62,9 +61,7 @@ public class DicaFragment extends Fragment implements BottomNavigationView.OnNav
         //configurar o adapter - que formata que o layout de cada item do recycler
         recyclerView = root.findViewById(R.id.recyclerViewDica);
         //configura o layout do fab para cadastro de dicas
-        fabDica = root.findViewById(R.id.fab_dica);
         navController = Navigation.findNavController(getActivity(), R.id.nav_host_fragment);
-        onFabClickListener();
 
         //view que representa os botoes da parte de baixo da tela(bottom navigation) para conseguir acessa-lo
         BottomNavigationView bottomNavigationView = (BottomNavigationView) root.findViewById(R.id.bottomNav);
@@ -168,14 +165,7 @@ public class DicaFragment extends Fragment implements BottomNavigationView.OnNav
             }
         });
     }
-    public void onFabClickListener() {
-        fabDica.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                navController.navigate(R.id.nav_cadastrar_dica);
-            }
-        });
-    }
+
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
         NavController navController = Navigation.findNavController(getActivity(), R.id.nav_host_fragment);

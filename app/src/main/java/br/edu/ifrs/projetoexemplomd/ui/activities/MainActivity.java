@@ -39,10 +39,10 @@ import br.edu.ifrs.projetoexemplomd.R;
 import br.edu.ifrs.projetoexemplomd.model.Amigo;
 import br.edu.ifrs.projetoexemplomd.model.Dica;
 import br.edu.ifrs.projetoexemplomd.model.Telefone;
-import br.edu.ifrs.projetoexemplomd.ui.dica.CadastrarDicaFragment;
+
 
 //import NavigationView
-public class MainActivity extends AppCompatActivity implements CadastrarDicaFragment.FragmentListener {
+public class MainActivity extends AppCompatActivity {
 
     private FirebaseUser currentUser;
     private AppBarConfiguration mAppBarConfiguration;
@@ -112,10 +112,5 @@ public class MainActivity extends AppCompatActivity implements CadastrarDicaFrag
             navController.navigate(R.id.nav_info); //abre o fragment - InfoFragment
         }
         return super.onOptionsItemSelected(item);
-    }
-
-    @Override
-    public void voltar() {
-        navController.navigate(R.id.nav_home);
     }
 }
