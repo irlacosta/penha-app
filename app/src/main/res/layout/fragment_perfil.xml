@@ -9,6 +9,4 @@
         android:layout_height="wrap_content"
         android:text="Fragment de perfil" />
 
-    <include layout="@layout/action_bar_bottom_navigation" />
-
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

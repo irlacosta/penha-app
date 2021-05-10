@@ -45,10 +45,6 @@ public class TelefoneFragment extends Fragment implements BottomNavigationView.O
         //carrega o fragmento_list e associa com a variável root
         View root = inflater.inflate(R.layout.fragment_list_telefone, container, false);
         recyclerView = root.findViewById(R.id.recyclerViewTelefone);
-        //view que representa os botoes da parte de baixo da tela(bottom navigation) para conseguir acessa-lo
-        BottomNavigationView bottomNavigationView = (BottomNavigationView) root.findViewById(R.id.bottomNav);
-        //seta o listener dos botoes. Quando clicar no botao vai acontecer uma acao
-        bottomNavigationView.setOnNavigationItemSelectedListener(this);
         //configurar o adapter - que formata que o layout de cada item do recycler
         AdapterTelefonesUteis adapterTelefonesUteis = new AdapterTelefonesUteis(Telefone.inicializaLista());
         //o recycler vai mostrar esses dados (myAdapter)

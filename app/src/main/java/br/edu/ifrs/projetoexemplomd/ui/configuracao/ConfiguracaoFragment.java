@@ -30,8 +30,6 @@ public class ConfiguracaoFragment extends Fragment implements BottomNavigationVi
                              @Nullable Bundle savedInstanceState) {
         //carrega o fragmento_list e associa com a variável root
         View root = inflater.inflate(R.layout.fragment_configuracao, container, false);
-        BottomNavigationView bottomNavigationView = (BottomNavigationView) root.findViewById(R.id.bottomNav);
-        bottomNavigationView.setOnNavigationItemSelectedListener(this);
         return root;
     }
 

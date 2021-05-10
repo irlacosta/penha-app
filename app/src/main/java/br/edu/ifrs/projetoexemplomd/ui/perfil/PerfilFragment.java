@@ -42,10 +42,6 @@ public class PerfilFragment extends Fragment implements BottomNavigationView.OnN
                              @Nullable Bundle savedInstanceState) {
         //carrega o fragmento_list e associa com a variável root
         View root = inflater.inflate(R.layout.fragment_perfil, container, false);
-        //view que representa os botoes da parte de baixo da tela(bottom navigation) para conseguir acessa-lo
-        BottomNavigationView bottomNavigationView = (BottomNavigationView) root.findViewById(R.id.bottomNav);
-        //seta o listener dos botoes. Quando clicar no botao vai acontecer uma acao
-        bottomNavigationView.setOnNavigationItemSelectedListener(this);
         return root;
     }
 
