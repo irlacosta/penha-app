@@ -62,11 +62,6 @@ public class DicaFragment extends Fragment implements BottomNavigationView.OnNav
         recyclerView = root.findViewById(R.id.recyclerViewDica);
         //configura o layout do fab para cadastro de dicas
         navController = Navigation.findNavController(getActivity(), R.id.nav_host_fragment);
-
-        //view que representa os botoes da parte de baixo da tela(bottom navigation) para conseguir acessa-lo
-        BottomNavigationView bottomNavigationView = (BottomNavigationView) root.findViewById(R.id.bottomNav);
-        //seta o listener dos botoes. Quando clicar no botao vai acontecer uma acao
-        bottomNavigationView.setOnNavigationItemSelectedListener(this);
         configuraRecycle();
         carregaListDica();
         return root;
