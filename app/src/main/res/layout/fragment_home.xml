@@ -30,7 +30,7 @@
                     android:layout_height="64dp"
                     android:layout_gravity="center"
                     android:layout_marginTop="8dp"
-                    android:src="@drawable/ic_friends"
+                    android:src="@drawable/ic_play_arrow"
                     android:tint="@color/colorPrimaryDark" />
 
                 <TextView
@@ -40,7 +40,7 @@
                     android:layout_gravity="center"
                     android:layout_marginTop="4dp"
                     android:layout_marginBottom="4dp"
-                    android:text="@string/card_amigos"
+                    android:text="@string/card_jogar"
                     android:textColor="@color/colorPrimaryDark"
                     android:textSize="20sp"
                     android:textStyle="bold" />
@@ -51,7 +51,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="8dp"
                     android:gravity="center"
-                    android:text="@string/card_amigos_second" />
+                    android:text="@string/card_jogar_second" />
 
             </LinearLayout>
 
@@ -60,14 +60,15 @@
         <androidx.cardview.widget.CardView
             android:id="@+id/card_two"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="0dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="24dp"
             app:cardElevation="4dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/card_one"
-            app:layout_constraintTop_toTopOf="parent">
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="@id/card_one">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -79,7 +80,7 @@
                     android:layout_height="64dp"
                     android:layout_gravity="center"
                     android:layout_marginTop="8dp"
-                    android:src="@drawable/ic_play_arrow"
+                    android:src="@drawable/ic_dicas"
                     android:tint="@color/colorPrimaryDark" />
 
                 <TextView
@@ -89,7 +90,7 @@
                     android:layout_marginTop="4dp"
                     android:layout_marginBottom="4dp"
                     android:gravity="center"
-                    android:text="@string/card_jogar"
+                    android:text="@string/card_dicas"
                     android:textColor="@color/colorPrimaryDark"
                     android:textSize="20sp"
                     android:textStyle="bold" />
@@ -99,7 +100,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="8dp"
                     android:gravity="center"
-                    android:text="@string/card_jogar_second" />
+                    android:text="@string/card_dicas_second" />
 
             </LinearLayout>
 
@@ -127,7 +128,7 @@
                     android:layout_height="64dp"
                     android:layout_gravity="center"
                     android:layout_marginTop="8dp"
-                    android:src="@drawable/ic_dicas"
+                    android:src="@drawable/ic_friends"
                     android:tint="@color/colorPrimaryDark" />
 
                 <TextView
@@ -137,7 +138,7 @@
                     android:layout_marginTop="4dp"
                     android:layout_marginBottom="4dp"
                     android:gravity="center"
-                    android:text="@string/card_dicas"
+                    android:text="@string/card_amigos"
                     android:textColor="@color/colorPrimaryDark"
                     android:textSize="20sp"
                     android:textStyle="bold" />
@@ -147,7 +148,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="8dp"
                     android:gravity="center"
-                    android:text="@string/card_dicas_second" />
+                    android:text="@string/card_amigos_second" />
 
             </LinearLayout>
 
@@ -156,14 +157,15 @@
         <androidx.cardview.widget.CardView
             android:id="@+id/card_four"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="0dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="24dp"
             app:cardElevation="4dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/card_three"
-            app:layout_constraintTop_toBottomOf="@id/card_two">
+            app:layout_constraintTop_toBottomOf="@id/card_two"
+            app:layout_constraintBottom_toBottomOf="@id/card_three">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -208,7 +210,7 @@
             android:layout_marginTop="16dp"
             android:layout_marginEnd="8dp"
             app:cardElevation="4dp"
-            app:layout_constraintEnd_toStartOf="@+id/card_six"
+            app:layout_constraintEnd_toEndOf="@id/card_three"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/card_three">
 
@@ -246,54 +248,6 @@
 
             </LinearLayout>
 
-        </androidx.cardview.widget.CardView>
-
-        <androidx.cardview.widget.CardView
-            android:id="@+id/card_six"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="24dp"
-            app:cardElevation="4dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/card_five"
-            app:layout_constraintTop_toBottomOf="@id/card_four">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-                <ImageView
-                    android:layout_width="64dp"
-                    android:layout_height="64dp"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="8dp"
-                    android:src="@drawable/ic_perfil"
-                    android:tint="@color/colorPrimaryDark" />
-
-                <TextView
-                    android:id="@+id/perfil_text_view"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginBottom="24dp"
-                    android:gravity="center"
-                    android:text="@string/card_perfil"
-                    android:textColor="@color/colorPrimaryDark"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="8dp"
-                    android:layout_gravity="center"
-                    android:text="@string/card_perfil_second" />
-
-
-            </LinearLayout>
         </androidx.cardview.widget.CardView>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
