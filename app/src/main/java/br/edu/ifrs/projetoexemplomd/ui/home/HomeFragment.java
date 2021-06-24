@@ -69,8 +69,7 @@ public class HomeFragment extends Fragment { //implements View.OnClickListener{ 
         card_quiz.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //navegar quando tiver a tela
-                Toast.makeText(getContext(), "Clicou em quiz", Toast.LENGTH_SHORT).show();
+        navController.navigate(R.id.nav_quiz);
             }
         });
         card_dicas.setOnClickListener(new View.OnClickListener() {

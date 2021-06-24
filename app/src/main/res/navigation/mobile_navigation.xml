@@ -77,4 +77,10 @@
         android:label="@string/menu_drawer_ver_dicas"
         tools:layout="@layout/fragment_list_dica" />
 
+    <fragment
+        android:id="@+id/nav_quiz"
+        android:name="br.edu.ifrs.projetoexemplomd.ui.quiz.QuizFragment"
+        android:label="@string/card_jogar"
+        tools:layout="@layout/fragment_quiz" />
+
 </navigation>
