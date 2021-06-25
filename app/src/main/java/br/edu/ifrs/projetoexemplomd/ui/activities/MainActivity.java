@@ -48,7 +48,6 @@ public class MainActivity extends AppCompatActivity {
     private AppBarConfiguration mAppBarConfiguration;
     private NavController navController;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -62,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
         // menu should be considered as top level destinations.
         mAppBarConfiguration = new AppBarConfiguration.Builder(
                 R.id.nav_home, R.id.nav_listar_dicas, R.id.nav_perfil, R.id.nav_cadastro_usuario,
-                R.id.nav_phone, R.id.nav_info, R.id.nav_cadastrar_dica, R.id.nav_termos_de_uso,
+                R.id.nav_phone, R.id.nav_info, R.id.nav_termos_de_uso,
                 R.id.nav_politica_privacidade)
                 .setDrawerLayout(drawer)
                 .build();
