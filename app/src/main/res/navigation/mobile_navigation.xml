@@ -30,12 +30,6 @@
         tools:layout="@layout/fragment_info" />
 
     <fragment
-        android:id="@+id/nav_cadastrar_dica"
-        android:name="br.edu.ifrs.projetoexemplomd.ui.dica.CadastrarDicaFragment"
-        android:label="@string/menu_drawer_cadastrar_dica"
-        tools:layout="@layout/fragment_cadastrar_dica" />
-
-    <fragment
         android:id="@+id/nav_termos_de_uso"
         android:name="br.edu.ifrs.projetoexemplomd.ui.info.TermsOfServiceFragment"
         android:label="@string/menu_drawer_termos_de_uso"

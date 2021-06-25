@@ -33,12 +33,8 @@ public class HomeFragment extends Fragment { //implements View.OnClickListener{ 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
 
-        //alterar o style do card no layout fragment_home
-        //fazer o card ser clicável e abrir um novo fragment com o item desejada: mapa, jogo, telefones, etc.
         View root = inflate(inflater, R.layout.fragment_home, container, false).getRoot();
-        //Button btnVoltar = root.findViewById(R.id.button_fragment_voltar);
         navController = Navigation.findNavController(getActivity(), R.id.nav_host_fragment);
-
         homeViewModel = ViewModelProviders.of(this).get(HomeViewModel.class);
 
         return root;
@@ -52,9 +48,9 @@ public class HomeFragment extends Fragment { //implements View.OnClickListener{ 
     }
 
     private void bind(View view) {
-        card_amigos = view.findViewById(R.id.card_one);
-        card_quiz = view.findViewById(R.id.card_two);
-        card_dicas = view.findViewById(R.id.card_three);
+        card_quiz = view.findViewById(R.id.card_one);
+        card_dicas= view.findViewById(R.id.card_two);
+        card_amigos  = view.findViewById(R.id.card_three);
         card_telefones = view.findViewById(R.id.card_four);
         card_mapa = view.findViewById(R.id.card_five);
     }
