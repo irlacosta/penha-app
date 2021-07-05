@@ -69,7 +69,7 @@
         android:id="@+id/nav_listar_dicas"
         android:name="br.edu.ifrs.projetoexemplomd.ui.dica.DicaFragment"
         android:label="@string/menu_drawer_ver_dicas"
-        tools:layout="@layout/fragment_list_dica" />
+        tools:layout="@layout/fragment_dica" />
 
     <fragment
         android:id="@+id/nav_quiz"
