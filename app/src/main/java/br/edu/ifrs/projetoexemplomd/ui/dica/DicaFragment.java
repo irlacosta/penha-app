@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.webkit.WebView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -31,11 +32,18 @@ public class DicaFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
         //carrega o fragmento_list e associa com a variável root
-        View root = inflater.inflate(R.layout.fragment_list_dica, container, false);
+        View root = inflater.inflate(R.layout.fragment_dica, container, false);
         //configurar o adapter - que formata que o layout de cada item do recycler
 
         //configura o layout do fab para cadastro de dicas
         navController = Navigation.findNavController(getActivity(), R.id.nav_host_fragment);
         return root;
+    }
+
+    @Override
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+        WebView myWebView = (WebView) view.findViewById(R.id.webview);
+        myWebView.loadUrl("https://www.google.com");
     }
 }
