@@ -83,8 +83,7 @@ public class HomeFragment extends Fragment { //implements View.OnClickListener{ 
         card_mapa.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("geo:0,0? q=-30.0264276,-51.2233058(IFRS POA)?z=15"));
-                    startActivity(intent);
+                navController.navigate(R.id.nav_maps);
             }
         });
     }
