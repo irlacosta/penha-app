@@ -77,4 +77,10 @@
         android:label="@string/card_jogar"
         tools:layout="@layout/fragment_quiz" />
 
+    <fragment
+        android:id="@+id/nav_maps"
+        android:name="br.edu.ifrs.projetoexemplomd.ui.map.MapsFragment"
+        android:label="Locais para Ajuda e Apoio"
+        tools:layout="@layout/fragment_maps" />
+
 </navigation>

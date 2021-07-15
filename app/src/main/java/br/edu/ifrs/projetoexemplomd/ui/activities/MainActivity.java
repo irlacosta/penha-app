@@ -1,21 +1,16 @@
 package br.edu.ifrs.projetoexemplomd.ui.activities;
 
 import android.os.Bundle;
-
-import com.google.android.gms.tasks.OnFailureListener;
-import com.google.android.gms.tasks.OnSuccessListener;
-import com.google.android.material.bottomnavigation.BottomNavigationView;
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.google.android.material.snackbar.Snackbar;
-
-import android.util.Log;
+import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
-import androidx.navigation.fragment.NavHostFragment;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
@@ -25,23 +20,8 @@ import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
-import androidx.drawerlayout.widget.DrawerLayout;
-
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
-
-import android.view.Menu;
-import android.widget.Toast;
-
-import java.util.ArrayList;
-
 import br.edu.ifrs.projetoexemplomd.R;
-import br.edu.ifrs.projetoexemplomd.model.Amigo;
-import br.edu.ifrs.projetoexemplomd.model.Dica;
-import br.edu.ifrs.projetoexemplomd.model.Telefone;
 
-
-//import NavigationView
 public class MainActivity extends AppCompatActivity {
 
     private FirebaseUser currentUser;
@@ -60,9 +40,8 @@ public class MainActivity extends AppCompatActivity {
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.nav_home, R.id.nav_listar_dicas, R.id.nav_perfil, R.id.nav_cadastro_usuario,
-                R.id.nav_phone, R.id.nav_info, R.id.nav_termos_de_uso,
-                R.id.nav_politica_privacidade)
+                R.id.nav_home, R.id.nav_perfil, R.id.nav_cadastro_usuario,
+                R.id.nav_info, R.id.nav_termos_de_uso, R.id.nav_politica_privacidade)
                 .setDrawerLayout(drawer)
                 .build();
 
