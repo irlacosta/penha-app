@@ -54,18 +54,6 @@
         tools:layout="@layout/fragment_configuracao" />
 
     <fragment
-        android:id="@+id/nav_cadastrar_amigo"
-        android:name="br.edu.ifrs.projetoexemplomd.ui.amigo.CadastrarAmigoFragment"
-        android:label="@string/menu_drawer_cadastrar_amigo"
-        tools:layout="@layout/fragment_cadastrar_amigo" />
-
-    <fragment
-        android:id="@+id/nav_listar_amigos"
-        android:name="br.edu.ifrs.projetoexemplomd.ui.amigo.AmigoListFragment"
-        android:label="@string/menu_drawer_ver_amigos"
-        tools:layout="@layout/fragment_list_amigo" />
-
-    <fragment
         android:id="@+id/nav_listar_dicas"
         android:name="br.edu.ifrs.projetoexemplomd.ui.dica.DicaFragment"
         android:label="@string/menu_drawer_ver_dicas"
