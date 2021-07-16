@@ -22,7 +22,6 @@ import static androidx.databinding.DataBindingUtil.inflate;
 public class HomeFragment extends Fragment { //implements View.OnClickListener{ //está dizendo eu sou um fragmento
 
     private HomeViewModel homeViewModel;
-    private CardView card_amigos;
     private CardView card_quiz;
     private CardView card_dicas;
     private CardView card_telefones;
@@ -50,18 +49,11 @@ public class HomeFragment extends Fragment { //implements View.OnClickListener{ 
     private void bind(View view) {
         card_quiz = view.findViewById(R.id.card_one);
         card_dicas= view.findViewById(R.id.card_two);
-        card_amigos  = view.findViewById(R.id.card_three);
+        card_mapa  = view.findViewById(R.id.card_three);
         card_telefones = view.findViewById(R.id.card_four);
-        card_mapa = view.findViewById(R.id.card_five);
     }
 
     private void setClick() {
-        card_amigos.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-               navController.navigate(R.id.nav_listar_amigos);
-            }
-        });
         card_quiz.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
