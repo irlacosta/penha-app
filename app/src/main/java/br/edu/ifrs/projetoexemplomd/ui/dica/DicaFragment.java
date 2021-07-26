@@ -17,7 +17,7 @@ import br.edu.ifrs.projetoexemplomd.R;
 import br.edu.ifrs.projetoexemplomd.adapter.AdapterDicas;
 
 public class DicaFragment extends Fragment {
-    //definição da variável que está visível no layout do fragmento
+    
     private RecyclerView recyclerView;
     private AdapterDicas adapterDicas;
     private NavController navController;
