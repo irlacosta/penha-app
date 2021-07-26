@@ -1,5 +1,7 @@
 package br.edu.ifrs.projetoexemplomd.ui.telefone;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
@@ -67,15 +69,14 @@ public class TelefoneFragment extends Fragment implements BottomNavigationView.O
         recyclerView.addOnItemTouchListener(new RecyclerItemClickListener(getContext(), recyclerView, new RecyclerItemClickListener.OnItemClickListener() {
             @Override
             public void onItemClick(View view, int position) {
-                //método para quando sofre um click rápido
-                //método que recebe a linha do Recycler que sofreu o click
-                Toast.makeText(getContext(), "Item pressionado com click: " + Telefone.inicializaLista().get(position).getLocalTelefone(), Toast.LENGTH_LONG).show();
+                Intent intent = new Intent(Intent.ACTION_DIAL);
+                intent.setData(Uri.parse("tel:" + Telefone.inicializaLista().get(position).getNumeroTelefone()));
+                startActivity(intent);
             }
 
             @Override
             public void onLongItemClick(View view, int position) {
-                //método para quando sofre um click longo
-                Toast.makeText(getContext(), "Item pressionado com click longo: " + Telefone.inicializaLista().get(position).getLocalTelefone(), Toast.LENGTH_LONG).show();
+
             }
 
             @Override
