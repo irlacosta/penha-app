@@ -21,7 +21,7 @@
         android:id="@+id/nav_phone"
         android:name="br.edu.ifrs.projetoexemplomd.ui.telefone.TelefoneFragment"
         android:label="@string/menu_drawer_telefones_uteis"
-        tools:layout="@layout/fragment_list_telefone" />
+        tools:layout="@layout/fragment_telefone" />
 
     <fragment
         android:id="@+id/nav_info"
@@ -64,6 +64,12 @@
         android:name="br.edu.ifrs.projetoexemplomd.ui.quiz.QuizFragment"
         android:label="@string/card_jogar"
         tools:layout="@layout/fragment_quiz" />
+
+    <fragment
+        android:id="@+id/nav_onboard"
+        android:name="br.edu.ifrs.projetoexemplomd.ui.quiz.OnboardFragment"
+        android:label="@string/toolbar_onboard"
+        tools:layout="@layout/fragment_onboard" />
 
     <fragment
         android:id="@+id/nav_maps"

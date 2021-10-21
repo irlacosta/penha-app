@@ -32,6 +32,7 @@
     <string name="txt_nav_bottom_settings">Configurações</string>
 
     <string name="card_jogar">Quiz</string>
+    <string name="toolbar_onboard">Jogar</string>
     <string name="card_jogar_second">Você está em um relacionamento abusivo? Descubra aqui!</string>
     <string name="card_dicas">Dicas</string>
     <string name="card_dicas_second">Informação e Apoio</string>
@@ -51,7 +52,7 @@
     <string name="btn_ler">Continuar Lendo</string>
 
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hello_onboard_fragment">Todos merecem um relacionamento seguro e saudável. Você sabe se seu relacionamento é saudável? Responda sim ou não para as seguintes questões para descobrir. Certifique-se de marcar as caixas para registrar suas  respostas. No final, você descobrirá como pontuar suas respostas.</string>
     <string name="positive_action">Sim</string>
     <string name="negative_action">Não</string>
 </resources>
