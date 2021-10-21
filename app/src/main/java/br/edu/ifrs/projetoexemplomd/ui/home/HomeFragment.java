@@ -57,7 +57,7 @@ public class HomeFragment extends Fragment { //implements View.OnClickListener{ 
         card_quiz.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-        navController.navigate(R.id.nav_quiz);
+        navController.navigate(R.id.nav_onboard);
             }
         });
         card_dicas.setOnClickListener(new View.OnClickListener() {

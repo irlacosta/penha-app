@@ -9,7 +9,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.LinearLayout;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -26,12 +25,10 @@ import br.edu.ifrs.projetoexemplomd.R;
 import br.edu.ifrs.projetoexemplomd.adapter.AdapterTelefonesUteis;
 import br.edu.ifrs.projetoexemplomd.listener.RecyclerItemClickListener;
 import br.edu.ifrs.projetoexemplomd.model.Telefone;
-import br.edu.ifrs.projetoexemplomd.ui.home.HomeFragment;
-import br.edu.ifrs.projetoexemplomd.ui.perfil.PerfilFragment;
 
 // implements BottomNavigationView.OnNavigationItemSelectedListener()
 
-public class TelefoneFragment extends Fragment implements BottomNavigationView.OnNavigationItemSelectedListener {
+public class TelefoneFragment extends Fragment {
     //definição da variável que está visível no layout do fragmento
     RecyclerView recyclerView;
 
@@ -45,7 +42,7 @@ public class TelefoneFragment extends Fragment implements BottomNavigationView.O
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
         //carrega o fragmento_list e associa com a variável root
-        View root = inflater.inflate(R.layout.fragment_list_telefone, container, false);
+        View root = inflater.inflate(R.layout.fragment_telefone, container, false);
         recyclerView = root.findViewById(R.id.recyclerViewTelefone);
         //configurar o adapter - que formata que o layout de cada item do recycler
         AdapterTelefonesUteis adapterTelefonesUteis = new AdapterTelefonesUteis(Telefone.inicializaLista());
@@ -86,25 +83,4 @@ public class TelefoneFragment extends Fragment implements BottomNavigationView.O
         }));
         return root;
     }
-
-    @Override
-    public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
-        NavController navController = Navigation.findNavController(getActivity(), R.id.nav_host_fragment);
-
-        switch (menuItem.getItemId()) {
-            case R.id.bottom_nav_home:
-                //trocar o fragmento
-                navController.navigate(R.id.nav_home);
-                return true;
-
-            case R.id.bottom_nav_perfil:
-                navController.navigate(R.id.nav_perfil);
-                return true;
-
-            case R.id.bottom_nav_config:
-                navController.navigate(R.id.nav_configuracao);
-                return false;
-        }
-        return true;
-    };
 }
