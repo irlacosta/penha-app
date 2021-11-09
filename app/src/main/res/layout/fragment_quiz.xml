@@ -8,6 +8,7 @@
         android:layout_height="match_parent">
 
         <TextView
+            android:id="@+id/texto_pergunta_quiz"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="1. Apoia muito as coisas que faço."
@@ -16,18 +17,18 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <Button
-            android:id="@+id/btn_positive"
+            android:id="@+id/btn_sim"
             android:layout_width="0dp"
             android:layout_height="96dp"
             android:layout_margin="16dp"
             android:text="@string/positive_action"
             android:textAllCaps="false"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/btn_negative"
+            app:layout_constraintEnd_toStartOf="@+id/btn_nao"
             app:layout_constraintStart_toStartOf="parent" />
 
         <Button
-            android:id="@+id/btn_negative"
+            android:id="@+id/btn_nao"
             android:layout_width="0dp"
             android:layout_height="96dp"
             android:layout_margin="16dp"
@@ -35,7 +36,7 @@
             android:textAllCaps="false"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/btn_positive" />
+            app:layout_constraintStart_toEndOf="@+id/btn_sim" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
