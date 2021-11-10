@@ -53,6 +53,21 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_onboard_fragment">Todos merecem um relacionamento seguro e saudável. Você sabe se seu relacionamento é saudável? Responda sim ou não para as seguintes questões para descobrir. Certifique-se de marcar as caixas para registrar suas  respostas. No final, você descobrirá como pontuar suas respostas.</string>
+    <string name="feedback_pontos">%d pontos</string>
+    <string name="feedback_categoria1_titulo">Não se Preocupe!</string>
+    <string name="feedback_categoria1_desc">Você obteve pontuação zero? Não se preocupe - é uma coisa boa! Parece que seu relacionamento está indo bem. Manter relacionamentos saudáveis dá trabalho - continue assim!</string>
+    <string name="feedback_categoria2_titulo">Converse!</string>
+    <string name="feedback_categoria2_desc">Se você marcou um ou dois pontos, pode estar percebendo algumas coisas em seu relacionamento que não são saudáveis, mas não significa necessariamente que sejam sinais de alerta. Ainda é uma boa ideia ficar de olho e certificar-se de que não haja um desenvolvimento de padrões não saudáveis.
+    A melhor coisa a fazer é conversar com seu parceiro e dizer o que você gosta e o que não gosta. Incentive-os a fazer o mesmo. Lembre-se de que a comunicação é sempre importante ao construir um relacionamento saudável.
+    </string>
+    <string name="feedback_categoria3_titulo">Fique Alerta!</string>
+    <string name="feedback_categoria3_desc">Se você marcou três ou quatro pontos, parece que você está vendo alguns sinais de alerta de um relacionamento abusivo. Não
+    ignore essas bandeiras vermelhas. Algo que começa pequeno pode piorar muito com o tempo. Nenhum relacionamento é perfeito - é preciso
+    trabalhos! Mas em um relacionamento saudável, você não encontrará comportamentos abusivos.
+    </string>
+    <string name="feedback_categoria5_titulo">Relacionamento abusivo?</string>
+    <string name="feedback_categoria5_desc">Se você marcou cinco ou pontos, você definitivamente está vendo sinais de alerta e pode estar em um relacionamento abusivo. Lembre-se que a coisa mais importante é a sua segurança. Você não tem que lidar com isso sozinha. Procure ajuda em XXXXXXX</string>
     <string name="positive_action">Sim</string>
     <string name="negative_action">Não</string>
+
 </resources>
