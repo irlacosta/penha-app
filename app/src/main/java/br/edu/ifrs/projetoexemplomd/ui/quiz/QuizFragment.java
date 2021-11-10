@@ -66,10 +66,12 @@ public class QuizFragment extends Fragment {
     }
 
     private void onSimClick() {
+        Database.somaPontos(perguntaAtual.getSim());
         navController.navigate(R.id.nav_quiz);
     }
 
     private void onNaoClick() {
+        Database.somaPontos(perguntaAtual.getNao());
         navController.navigate(R.id.nav_quiz);
     }
 
