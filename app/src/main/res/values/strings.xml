@@ -71,7 +71,7 @@ Você PODE utilizar o conteúdo desta plataforma exclusivamente para uso imediat
     <string name="feedback_categoria1_titulo">Não se Preocupe!</string>
     <string name="feedback_categoria1_desc">Você obteve pontuação zero? Não se preocupe - é uma coisa boa! Parece que seu relacionamento está indo bem. Manter relacionamentos saudáveis dá trabalho - continue assim!</string>
     <string name="feedback_categoria2_titulo">Converse!</string>
-    <string name="feedback_categoria2_desc">Se você marcou um ou dois pontos, pode estar percebendo algumas coisas em seu relacionamento que não são saudáveis, mas não significa necessariamente que sejam sinais de alerta. Ainda é uma boa ideia ficar de olho e certificar-se de que não haja um desenvolvimento de padrões não saudáveis.
+    <string name="feedback_categoria2_desc">Se você marcou um ou dois pontos, pode estar percebendo algumas coisas em seu relacionamento que não são saudáveis, mas não significa necessariamente que sejam sinais de alerta.
     A melhor coisa a fazer é conversar com seu parceiro e dizer o que você gosta e o que não gosta. Incentive-os a fazer o mesmo. Lembre-se de que a comunicação é sempre importante ao construir um relacionamento saudável.
     </string>
     <string name="feedback_categoria3_titulo">Fique Alerta!</string>
@@ -80,7 +80,7 @@ Você PODE utilizar o conteúdo desta plataforma exclusivamente para uso imediat
     trabalhos! Mas em um relacionamento saudável, você não encontrará comportamentos abusivos.
     </string>
     <string name="feedback_categoria5_titulo">Relacionamento abusivo?</string>
-    <string name="feedback_categoria5_desc">Se você marcou cinco ou pontos, você definitivamente está vendo sinais de alerta e pode estar em um relacionamento abusivo. Lembre-se que a coisa mais importante é a sua segurança. Você não tem que lidar com isso sozinha. Procure ajuda e apoio nos telefones informados na seção ‘Telefones Úteis’ ou ainda na seção ‘Dicas’ deste aplicativo.</string>
+    <string name="feedback_categoria5_desc">Se você marcou cinco ou mais pontos, você definitivamente está vendo sinais de alerta e pode estar em um relacionamento abusivo. Lembre-se que a coisa mais importante é a sua segurança. Você não tem que lidar com isso sozinha. Procure ajuda e apoio nos telefones informados na seção ‘Telefones Úteis’ ou ainda na seção ‘Dicas’ deste aplicativo.</string>
     <string name="positive_action">Sim</string>
     <string name="negative_action">Não</string>
 
