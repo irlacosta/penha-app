@@ -16,6 +16,7 @@ import androidx.navigation.Navigation;
 
 import br.edu.ifrs.projetoexemplomd.R;
 import br.edu.ifrs.projetoexemplomd.data.Database;
+import br.edu.ifrs.projetoexemplomd.model.Feedback;
 import br.edu.ifrs.projetoexemplomd.model.Pergunta;
 import br.edu.ifrs.projetoexemplomd.ui.home.HomeViewModel;
 
@@ -48,21 +49,57 @@ public class QuizFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         perguntaAtual = Database.getProximaPergunta();
-        textoPergunta.setText(perguntaAtual.getTexto());
+        if (perguntaAtual != null) {
+            textoPergunta.setText(perguntaAtual.getTexto());
+            respostaSim.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    onSimClick();
+                }
 
-        respostaSim.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                onSimClick();
-            }
+            });
+            respostaNao.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    onNaoClick();
+                }
+            });
+        } else {
+            Database.setFeedback(retornaFeedback());
+            navController.navigate(R.id.nav_feedback);
+        }
+    }
 
-        });
-        respostaNao.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                onNaoClick();
-            }
-        });
+    private Feedback buildFeedback1() {
+        return new Feedback(getString(R.string.feedback_categoria1_titulo), getString(R.string.feedback_categoria1_desc), getString(R.string.feedback_pontos, Database.getPontos()));
+    }
+
+    private Feedback buildFeedback2() {
+        return new Feedback(getString(R.string.feedback_categoria2_titulo), getString(R.string.feedback_categoria2_desc), getString(R.string.feedback_pontos, Database.getPontos()));
+    }
+
+    private Feedback buildFeedback3() {
+        return new Feedback(getString(R.string.feedback_categoria3_titulo), getString(R.string.feedback_categoria3_desc), getString(R.string.feedback_pontos, Database.getPontos()));
+    }
+
+    private Feedback buildFeedback5() {
+        return new Feedback(getString(R.string.feedback_categoria5_titulo), getString(R.string.feedback_categoria5_desc), getString(R.string.feedback_pontos, Database.getPontos()));
+    }
+
+    private Feedback retornaFeedback() {
+
+        if (Database.getPontos() == 0) {
+            return buildFeedback1();
+        }
+        else if(Database.getPontos() >= 1 && Database.getPontos() <= 2) {
+            return buildFeedback2();
+        }
+        else if(Database.getPontos() >= 3 && Database.getPontos() <= 4) {
+            return buildFeedback3();
+        }
+        else {
+            return buildFeedback5();
+        }
     }
 
     private void onSimClick() {

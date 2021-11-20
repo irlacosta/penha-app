@@ -36,8 +36,12 @@ public class MapsFragment extends Fragment {
             LatLng deam = new LatLng(-30.047175366665464, -51.210610297076244);
             LatLng pc = new LatLng(-30.03266116892074, -51.235515672661506);
 
-            googleMap.addMarker(new MarkerOptions().position(deam).title("Delegacia da Mulher"));
-            googleMap.addMarker(new MarkerOptions().position(pc).title("Polícia Civil"));
+            googleMap.addMarker(new MarkerOptions().position(deam).title("Delegacia da Mulher - Rua xxxx telefone xxxx"));
+            googleMap.addMarker(new MarkerOptions().position(pc).title("Polícia Civil - Rua xxxx telefone xxxx"));
+//            googleMap.addMarker(new MarkerOptions().position(deam).title("Delegacia da Mulher - Rua xxxx telefone xxxx"));
+//            googleMap.addMarker(new MarkerOptions().position(pc).title("Polícia Civil - Rua xxxx telefone xxxx"));
+//            googleMap.addMarker(new MarkerOptions().position(deam).title("Delegacia da Mulher - Rua xxxx telefone xxxx"));
+
             googleMap.moveCamera(CameraUpdateFactory.newLatLng(deam));
             googleMap.moveCamera(CameraUpdateFactory.zoomTo(12));
         }

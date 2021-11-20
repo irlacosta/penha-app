@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".ui.quiz.OnboardFragment">
     <TextView
-        android:id="@+id/pontos"
+        android:id="@+id/pontuacao"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textStyle="bold"
@@ -29,7 +29,7 @@
         android:textSize="28sp"
         android:layout_marginTop="20dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/pontos"
+        app:layout_constraintTop_toBottomOf="@id/pontuacao"
         app:layout_constraintEnd_toEndOf="parent"
         />
 
@@ -39,7 +39,7 @@
         android:layout_height="wrap_content"
         android:text="@string/feedback_categoria1_desc"
         android:textAlignment="center"
-        android:textSize="28sp"
+        android:textSize="24sp"
         android:layout_marginTop="20dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/categoria"
@@ -47,10 +47,11 @@
         />
 
     <Button
-        android:id="@+id/btn_feedback"
+        android:id="@+id/btn_finalizar_feedback"
         android:layout_width="wrap_content"
         android:layout_height="74dp"
-        android:text="Ok!"
+        android:text="Ok"
+        android:textSize="28sp"
         android:layout_marginTop="40dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
