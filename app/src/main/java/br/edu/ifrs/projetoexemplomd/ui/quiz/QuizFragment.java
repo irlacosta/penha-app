@@ -12,6 +12,7 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProviders;
 import androidx.navigation.NavController;
+import androidx.navigation.NavOptions;
 import androidx.navigation.Navigation;
 
 import br.edu.ifrs.projetoexemplomd.R;
@@ -34,6 +35,7 @@ public class QuizFragment extends Fragment {
                              ViewGroup container, Bundle savedInstanceState) {
 
         navController = Navigation.findNavController(getActivity(), R.id.nav_host_fragment);
+        navController.popBackStack(R.id.nav_quiz, false);
 
         //alterar o style do card no layout fragment_home
         //fazer o card ser clicável e abrir um novo fragment com o item desejada: mapa, jogo, telefones, etc.
@@ -111,5 +113,4 @@ public class QuizFragment extends Fragment {
         Database.somaPontos(perguntaAtual.getNao());
         navController.navigate(R.id.nav_quiz);
     }
-
 }

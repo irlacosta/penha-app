@@ -21,6 +21,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
 import br.edu.ifrs.projetoexemplomd.R;
+import br.edu.ifrs.projetoexemplomd.data.Database;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -73,6 +74,7 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onSupportNavigateUp() {
+        Database.voltarPergunta();
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
         return NavigationUI.navigateUp(navController, mAppBarConfiguration)
                 || super.onSupportNavigateUp();

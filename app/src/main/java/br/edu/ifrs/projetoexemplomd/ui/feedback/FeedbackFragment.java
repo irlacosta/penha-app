@@ -51,6 +51,7 @@ public class FeedbackFragment extends Fragment {
         finalizaBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Database.voltarPergunta();
                 navController.navigate(R.id.nav_home);
             }
         });

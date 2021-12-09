@@ -45,4 +45,9 @@ public final class Database {
             return null;
         }
     }
+
+    public static void voltarPergunta(){
+        perguntaAtualIndex = 0;
+        somaPontos = 0;
+    }
 }

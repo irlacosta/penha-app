@@ -45,6 +45,6 @@ public class DicaFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         WebView myWebView = (WebView) view.findViewById(R.id.webView_dica);
-        myWebView.loadUrl("https://www.google.com");
+        myWebView.loadUrl("https://www.naosecale.ms.gov.br/violencia-contra-a-mulher/");
     }
 }
