@@ -14,6 +14,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 
 import br.edu.ifrs.projetoexemplomd.R;
+import br.edu.ifrs.projetoexemplomd.data.Database;
 
 public class OnboardFragment extends Fragment {
 
@@ -43,6 +44,7 @@ public class OnboardFragment extends Fragment {
         onboardBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Database.voltarPergunta();
                 navController.navigate(R.id.nav_quiz);
             }
         });

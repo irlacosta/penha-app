@@ -16,7 +16,7 @@ public class TermsOfServiceFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
 
-        View root = inflater.inflate(R.layout.fragment_terms_of_service, container, false);
+        View root = inflater.inflate(R.layout.fragment_termos_uso, container, false);
         return root;
     }
 }

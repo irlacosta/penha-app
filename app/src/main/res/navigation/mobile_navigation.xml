@@ -27,19 +27,19 @@
         android:id="@+id/nav_info"
         android:name="br.edu.ifrs.projetoexemplomd.ui.info.InfoFragment"
         android:label="@string/menu_drawer_info"
-        tools:layout="@layout/fragment_info" />
+        tools:layout="@layout/fragment_sobre" />
 
     <fragment
         android:id="@+id/nav_termos_de_uso"
         android:name="br.edu.ifrs.projetoexemplomd.ui.info.TermsOfServiceFragment"
         android:label="@string/menu_drawer_termos_de_uso"
-        tools:layout="@layout/fragment_terms_of_service" />
+        tools:layout="@layout/fragment_termos_uso" />
 
     <fragment
         android:id="@+id/nav_politica_privacidade"
         android:name="br.edu.ifrs.projetoexemplomd.ui.info.PrivacyPolicyFragment"
         android:label="@string/menu_drawer_politica_privacidade"
-        tools:layout="@layout/fragment_privacy_policy" />
+        tools:layout="@layout/fragment_politica_privacidade" />
 
     <fragment
         android:id="@+id/nav_perfil"
@@ -76,5 +76,11 @@
         android:name="br.edu.ifrs.projetoexemplomd.ui.map.MapsFragment"
         android:label="Locais para Ajuda e Apoio"
         tools:layout="@layout/fragment_maps" />
+
+    <fragment
+        android:id="@+id/nav_feedback"
+        android:name="br.edu.ifrs.projetoexemplomd.ui.feedback.FeedbackFragment"
+        android:label="Resultado"
+        tools:layout="@layout/fragment_feedback" />
 
 </navigation>

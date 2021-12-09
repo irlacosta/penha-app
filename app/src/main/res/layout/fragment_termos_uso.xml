@@ -5,15 +5,13 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/text_privacy_policy"
+        android:id="@+id/text_terms_of_service"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="8dp"
-        android:text="Lorem ipsum faucibus ornare bibendum pretium diam at mattis, lacus nisl ligula duis in proin sociosqu,vehicula donec curae tortor aliquet ultricies mi molestie venenatis commodo dapibus habitasse porttitor faucibus nam tempus sse nunc integer.\n\n
-        ante primis pellentesque arcu sollicitudin felis litora conubia rhoncus urna nullam diam, nibh tincidunt auctor ultricies pharetra interdum vehicula bibendum aenean.\n\n
-        Malesuada justo adipiscing imperdiet inceptos sociosqu porta porttitor gravida quis consectetur, porttitor hendrerit fringilla ornare dictum netus donec ipsum velit vulputate, tortor felis enim suscipit dictum rhoncus enim elit posuere."
+        android:text="@string/termos_de_uso_fragment"
         android:textAlignment="center"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
