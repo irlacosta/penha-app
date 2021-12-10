@@ -20,10 +20,19 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.ValueEventListener;
+
+import java.util.ArrayList;
+import java.util.List;
 
 import br.edu.ifrs.projetoexemplomd.R;
 import br.edu.ifrs.projetoexemplomd.adapter.AdapterTelefonesUteis;
+import br.edu.ifrs.projetoexemplomd.dao.SettingsFirebase;
+import br.edu.ifrs.projetoexemplomd.data.Database;
 import br.edu.ifrs.projetoexemplomd.listener.RecyclerItemClickListener;
+import br.edu.ifrs.projetoexemplomd.model.Pergunta;
 import br.edu.ifrs.projetoexemplomd.model.Telefone;
 
 // implements BottomNavigationView.OnNavigationItemSelectedListener()
@@ -44,8 +53,29 @@ public class TelefoneFragment extends Fragment {
         //carrega o fragmento_list e associa com a variável root
         View root = inflater.inflate(R.layout.fragment_telefone, container, false);
         recyclerView = root.findViewById(R.id.recyclerViewTelefone);
-        //configurar o adapter - que formata que o layout de cada item do recycler
-        AdapterTelefonesUteis adapterTelefonesUteis = new AdapterTelefonesUteis(Telefone.inicializaLista());
+
+        SettingsFirebase.getNo("telefones").addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                List<Telefone> telefones = new ArrayList<>();
+                for (DataSnapshot postSnapshot : dataSnapshot.getChildren()) {
+                    Telefone telefone = postSnapshot.getValue(Telefone.class);
+                    telefones.add(telefone);
+                }
+                setList(telefones);
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+                databaseError.getMessage();
+            }
+        });
+
+        return root;
+    }
+
+    private void setList(final List<Telefone> telefones) {
+        AdapterTelefonesUteis adapterTelefonesUteis = new AdapterTelefonesUteis(telefones);
         //o recycler vai mostrar esses dados (myAdapter)
         recyclerView.setAdapter(adapterTelefonesUteis);
         //linha de código usada para otimizar o recycler
@@ -67,7 +97,7 @@ public class TelefoneFragment extends Fragment {
             @Override
             public void onItemClick(View view, int position) {
                 Intent intent = new Intent(Intent.ACTION_DIAL);
-                intent.setData(Uri.parse("tel:" + Telefone.inicializaLista().get(position).getNumeroTelefone()));
+                intent.setData(Uri.parse("tel:" + telefones.get(position).getNumero()));
                 startActivity(intent);
             }
 
@@ -81,6 +111,5 @@ public class TelefoneFragment extends Fragment {
 
             }
         }));
-        return root;
     }
 }

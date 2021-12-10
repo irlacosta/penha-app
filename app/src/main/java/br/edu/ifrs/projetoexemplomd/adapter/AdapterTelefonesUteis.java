@@ -43,8 +43,8 @@ public class AdapterTelefonesUteis extends RecyclerView.Adapter<AdapterTelefones
     public void onBindViewHolder(@NonNull AdapterTelefonesUteis.MyViewHolder myViewHolder, int i) {
         //exibe os itens no Recycler
         Telefone t = listaTelefones.get(i);
-        myViewHolder.localTelefone.setText(t.getLocalTelefone());
-        myViewHolder.numeroTelefone.setText(String.valueOf(t.getNumeroTelefone()));
+        myViewHolder.localTelefone.setText(t.getNome());
+        myViewHolder.numeroTelefone.setText(String.valueOf(t.getNumero()));
     }
 
     @Override
