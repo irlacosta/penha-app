@@ -22,7 +22,6 @@ public class AdapterTelefonesUteis extends RecyclerView.Adapter<AdapterTelefones
     //garantir que a lista será criada fica dentro do contrutor
     public AdapterTelefonesUteis(List<Telefone> telefones) {
         this.listaTelefones = telefones;
-        Log.d("teste", telefones.toString());
     }
 
     @NonNull

@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.LayoutInflater;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
@@ -13,13 +12,11 @@ import android.widget.LinearLayout;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
-import androidx.navigation.NavController;
-import androidx.navigation.Navigation;
 import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.google.android.material.bottomnavigation.BottomNavigationView;
+
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.ValueEventListener;
@@ -30,12 +27,10 @@ import java.util.List;
 import br.edu.ifrs.projetoexemplomd.R;
 import br.edu.ifrs.projetoexemplomd.adapter.AdapterTelefonesUteis;
 import br.edu.ifrs.projetoexemplomd.dao.SettingsFirebase;
-import br.edu.ifrs.projetoexemplomd.data.Database;
+
 import br.edu.ifrs.projetoexemplomd.listener.RecyclerItemClickListener;
-import br.edu.ifrs.projetoexemplomd.model.Pergunta;
 import br.edu.ifrs.projetoexemplomd.model.Telefone;
 
-// implements BottomNavigationView.OnNavigationItemSelectedListener()
 
 public class TelefoneFragment extends Fragment {
     //definição da variável que está visível no layout do fragmento

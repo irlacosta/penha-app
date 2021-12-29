@@ -5,69 +5,53 @@ import java.util.List;
 
 public class Dica {
 
-    private String id;
-    private String assuntoDica;
-    private String descricaoDica;
-    private String userId;
+    private String fraseDica;
+    private String saibaMaisDica;
+    private String url;
 
     public Dica() {}
 
-    public Dica(String assuntoDica, String descricaoDica) {
-        this.assuntoDica = assuntoDica;
-        this.descricaoDica = descricaoDica;
+    public Dica(String fraseDica, String saibaMaisDica) {
+        this.fraseDica = fraseDica;
+        this.saibaMaisDica = saibaMaisDica;
     }
 
-    public Dica(String id, String assuntoDica, String descricaoDica) {
-        this.id = id;
-        this.assuntoDica = assuntoDica;
-        this.descricaoDica = descricaoDica;
+    public Dica(String fraseDica, String saibaMaisDica, String url) {
+        this.fraseDica = fraseDica;
+        this.saibaMaisDica = saibaMaisDica;
+        this.url = url;
     }
 
-    public Dica(String id, String assuntoDica, String descricaoDica, String userId) {
-        this.id = id;
-        this.assuntoDica = assuntoDica;
-        this.descricaoDica = descricaoDica;
-        this.userId = userId;
+    public String getFraseDica() {
+        return fraseDica;
     }
 
-    public String getId() {
-        return id;
+    public void setFraseDica(String fraseDica) {
+        this.fraseDica = fraseDica;
     }
 
-    public void setId(String id) {
-        this.id = id;
+    public String getSaibaMaisDica() {
+        return saibaMaisDica;
     }
 
-    public String getAssuntoDica() {
-        return assuntoDica;
+    public void setSaibaMaisDica(String saibaMaisDica) {
+        this.saibaMaisDica = saibaMaisDica;
     }
 
-    public void setAssuntoDica(String assuntoDica) {
-        this.assuntoDica = assuntoDica;
+    public String getUrl() {
+        return url;
     }
 
-    public String getDescricaoDica() {
-        return descricaoDica;
-    }
-
-    public void setDescricaoDica(String descricaoDica) {
-        this.descricaoDica = descricaoDica;
-    }
-
-    public String getUserId() {
-        return userId;
-    }
-
-    public void setUserId(String userId) {
-        this.userId = userId;
+    public void setUrl(String url) {
+        this.url = url;
     }
 
     @Override
     public String toString() {
         return "Dica{" +
-                "id='" + id + '\'' +
-                "assunto='" + assuntoDica + '\'' +
-                ", descricao='" + descricaoDica + '\'' +
+                "fraseDica='" + fraseDica + '\'' +
+                ", saibaMaisDica='" + saibaMaisDica + '\'' +
+                ", url='" + url + '\'' +
                 '}';
     }
 }

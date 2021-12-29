@@ -24,20 +24,20 @@
         tools:layout="@layout/fragment_telefone" />
 
     <fragment
-        android:id="@+id/nav_info"
-        android:name="br.edu.ifrs.projetoexemplomd.ui.info.InfoFragment"
+        android:id="@+id/nav_sobre"
+        android:name="br.edu.ifrs.projetoexemplomd.ui.info.SobreFragment"
         android:label="@string/menu_drawer_info"
         tools:layout="@layout/fragment_sobre" />
 
     <fragment
         android:id="@+id/nav_termos_de_uso"
-        android:name="br.edu.ifrs.projetoexemplomd.ui.info.TermsOfServiceFragment"
+        android:name="br.edu.ifrs.projetoexemplomd.ui.info.TermosUsoFragment"
         android:label="@string/menu_drawer_termos_de_uso"
         tools:layout="@layout/fragment_termos_uso" />
 
     <fragment
         android:id="@+id/nav_politica_privacidade"
-        android:name="br.edu.ifrs.projetoexemplomd.ui.info.PrivacyPolicyFragment"
+        android:name="br.edu.ifrs.projetoexemplomd.ui.info.PoliticaPrivacidadeFragment"
         android:label="@string/menu_drawer_politica_privacidade"
         tools:layout="@layout/fragment_politica_privacidade" />
 
@@ -62,8 +62,14 @@
     <fragment
         android:id="@+id/nav_quiz"
         android:name="br.edu.ifrs.projetoexemplomd.ui.quiz.QuizFragment"
-        android:label="@string/card_jogar"
+        android:label="@string/card_quiz"
         tools:layout="@layout/fragment_quiz" />
+
+    <fragment
+        android:id="@+id/nav_ong"
+        android:name="br.edu.ifrs.projetoexemplomd.ui.ong.OngFragment"
+        android:label="@string/card_ongs"
+        tools:layout="@layout/fragment_ong" />
 
     <fragment
         android:id="@+id/nav_onboard"
@@ -73,7 +79,7 @@
 
     <fragment
         android:id="@+id/nav_maps"
-        android:name="br.edu.ifrs.projetoexemplomd.ui.map.MapsFragment"
+        android:name="br.edu.ifrs.projetoexemplomd.ui.map.MapaFragment"
         android:label="Locais para Ajuda e Apoio"
         tools:layout="@layout/fragment_maps" />
 
@@ -82,5 +88,11 @@
         android:name="br.edu.ifrs.projetoexemplomd.ui.feedback.FeedbackFragment"
         android:label="Resultado"
         tools:layout="@layout/fragment_feedback" />
+
+    <fragment
+        android:id="@+id/nav_navegador"
+        android:name="br.edu.ifrs.projetoexemplomd.ui.navegador.NavegadorFragment"
+        android:label="Navegador"
+        tools:layout="@layout/fragment_navegador" />
 
 </navigation>

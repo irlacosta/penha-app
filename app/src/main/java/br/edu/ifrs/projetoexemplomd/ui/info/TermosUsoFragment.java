@@ -10,7 +10,7 @@ import androidx.fragment.app.Fragment;
 
 import br.edu.ifrs.projetoexemplomd.R;
 
-public class TermsOfServiceFragment extends Fragment {
+public class TermosUsoFragment extends Fragment {
 
 
     public View onCreateView(@NonNull LayoutInflater inflater,

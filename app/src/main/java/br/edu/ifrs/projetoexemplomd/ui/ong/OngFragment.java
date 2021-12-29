@@ -1,4 +1,4 @@
-package br.edu.ifrs.projetoexemplomd.ui.dica;
+package br.edu.ifrs.projetoexemplomd.ui.ong;
 
 import android.content.Intent;
 import android.net.Uri;
@@ -6,8 +6,6 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.webkit.WebView;
-import android.webkit.WebViewClient;
 import android.widget.AdapterView;
 import android.widget.LinearLayout;
 
@@ -29,40 +27,45 @@ import java.util.List;
 
 import br.edu.ifrs.projetoexemplomd.R;
 import br.edu.ifrs.projetoexemplomd.adapter.AdapterDicas;
+import br.edu.ifrs.projetoexemplomd.adapter.AdapterOngs;
 import br.edu.ifrs.projetoexemplomd.adapter.AdapterTelefonesUteis;
 import br.edu.ifrs.projetoexemplomd.dao.SettingsFirebase;
 import br.edu.ifrs.projetoexemplomd.data.Database;
 import br.edu.ifrs.projetoexemplomd.listener.RecyclerItemClickListener;
 import br.edu.ifrs.projetoexemplomd.model.Dica;
+import br.edu.ifrs.projetoexemplomd.model.Ong;
 import br.edu.ifrs.projetoexemplomd.model.Telefone;
+import br.edu.ifrs.projetoexemplomd.ui.dica.DicaFragment;
 
-public class DicaFragment extends Fragment {
+// implements BottomNavigationView.OnNavigationItemSelectedListener()
 
-    public static DicaFragment newInstance() {
-        return new DicaFragment();
+public class OngFragment extends Fragment {
+
+
+    public static OngFragment newInstance() {
+        return new OngFragment();
     }
 
     RecyclerView recyclerView;
     private NavController navController;
 
-    //objeto não pode estar nulo
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
 
-        View root = inflater.inflate(R.layout.fragment_dica, container, false);
-        recyclerView = root.findViewById(R.id.recyclerViewDica);
+        View root = inflater.inflate(R.layout.fragment_ong, container, false);
+        recyclerView = root.findViewById(R.id.recyclerViewOng);
         navController = Navigation.findNavController(getActivity(), R.id.nav_host_fragment);
-        SettingsFirebase.getNo("dicas").addValueEventListener(new ValueEventListener() {
+        SettingsFirebase.getNo("ongs").addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                List<Dica> dicas = new ArrayList<>();
+                List<Ong> ongs = new ArrayList<>();
                 for (DataSnapshot postSnapshot : dataSnapshot.getChildren()) {
-                    Dica dica = postSnapshot.getValue(Dica.class);
-                    dicas.add(dica);
+                    Ong ong = postSnapshot.getValue(Ong.class);
+                    ongs.add(ong);
                 }
-                setList(dicas);
+                setList(ongs);
             }
 
             @Override
@@ -74,29 +77,22 @@ public class DicaFragment extends Fragment {
         return root;
     }
 
-    private void setList(final List<Dica> dicas) {
-        AdapterDicas adapterDicas = new AdapterDicas(dicas);
+    private void setList(final List<Ong> ongs) {
+        AdapterOngs adapterOngs = new AdapterOngs(ongs);
         //o recycler vai mostrar esses dados (myAdapter)
-        recyclerView.setAdapter(adapterDicas);
+        recyclerView.setAdapter(adapterOngs);
         //linha de código usada para otimizar o recycler
         recyclerView.setHasFixedSize(true);
 
         //configurar o gerenciador de layout
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(getContext());
-        //StaggeredGridLayoutManager layoutManager2 = new StaggeredGridLayoutManager(2, LinearLayoutManager.VERTICAL); //vertical - se adapta ao conteúdo
-        //GridLayoutManager layoutManager3 = new GridLayoutManager(getContext(), 2);
 
-        //adiciona um separador entre os itens da lista carregados na tela
-        //recyclerView.addItemDecoration(new DividerItemDecoration(getContext(), LinearLayout.VERTICAL));
-
-        //definindo o layout do rFecycler
-        //para os itens ficarem de acordo com o layout escolhido
         recyclerView.setLayoutManager(layoutManager);
 
         recyclerView.addOnItemTouchListener(new RecyclerItemClickListener(getContext(), recyclerView, new RecyclerItemClickListener.OnItemClickListener() {
             @Override
             public void onItemClick(View view, int position) {
-                Database.setNavegadorUrl(dicas.get(position).getUrl());
+                Database.setNavegadorUrl(ongs.get(position).getUrl());
                 navController.navigate(R.id.nav_navegador);
             }
 
@@ -110,5 +106,4 @@ public class DicaFragment extends Fragment {
         }));
 
     }
-
 }
