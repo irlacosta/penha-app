@@ -8,13 +8,13 @@
     <TextView
         android:id="@+id/text_privacy_policy"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="20dp"
         android:layout_marginTop="20dp"
-        android:layout_marginEnd="8dp"
-        android:text="Lorem ipsum faucibus ornare bibendum pretium diam at mattis, lacus nisl ligula duis in proin sociosqu,vehicula donec curae tortor aliquet ultricies mi molestie venenatis commodo dapibus habitasse porttitor faucibus nam tempus sse nunc integer.\n\n
-        ante primis pellentesque arcu sollicitudin felis litora conubia rhoncus urna nullam diam, nibh tincidunt auctor ultricies pharetra interdum vehicula bibendum aenean.\n\n
-        Malesuada justo adipiscing imperdiet inceptos sociosqu porta porttitor gravida quis consectetur, porttitor hendrerit fringilla ornare dictum netus donec ipsum velit vulputate, tortor felis enim suscipit dictum rhoncus enim elit posuere."
+        android:layout_marginEnd="20dp"
+        android:text="Coletamos e armazenamos as informações gerais de como o serviço foi utilizado, o endereço de protocolo de internet I(P), as informações de data e horário do uso em que a plataforma foi utilizada.  Destacamos que o aplicativo Penha App não coleta informações de contatos. Nossos serviços não exigem cadastro da usuária para sua utilização. \n\n
+        O aplicativo Penha App pode coletar e processar informações sobre a localização real do usuário. Salientamos também que podemos fazer o uso de várias Tecnologias para determinação da localização como endereço IP, GPS e outros sensores como pontos de acesso wi-fi e torres de celular próximo a informação da localização da usuária. \n\n
+        Aos serviços compartilhamento das informações coletadas:  não compartilhamos informações com empresas organizações de indivíduos externos."
         android:textAlignment="center"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"

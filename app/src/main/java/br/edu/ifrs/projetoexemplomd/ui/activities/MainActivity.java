@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
         // menu should be considered as top level destinations.
         mAppBarConfiguration = new AppBarConfiguration.Builder(
                 R.id.nav_home, R.id.nav_perfil, R.id.nav_cadastro_usuario,
-                R.id.nav_info, R.id.nav_termos_de_uso, R.id.nav_politica_privacidade)
+                R.id.nav_sobre, R.id.nav_termos_de_uso, R.id.nav_politica_privacidade)
                 .setDrawerLayout(drawer)
                 .build();
 
@@ -89,7 +89,7 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(getApplicationContext(), " Logout Efetuado", Toast.LENGTH_LONG).show();
             finish(); //volta para o login - activity anterior
         } else if (item.getItemId() == R.id.action_info) {
-            navController.navigate(R.id.nav_info); //abre o fragment - InfoFragment
+            navController.navigate(R.id.nav_sobre); //abre o fragment - InfoFragment
         }
         return super.onOptionsItemSelected(item);
     }

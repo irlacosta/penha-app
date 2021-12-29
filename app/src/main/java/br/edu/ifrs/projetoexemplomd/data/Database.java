@@ -10,6 +10,7 @@ public final class Database {
     private static int perguntaAtualIndex = 0;
     private static int somaPontos;
     private static Feedback feedback;
+    private static String navegadorUrl;
 
     public static Feedback getFeedback() {
         return feedback;
@@ -33,6 +34,14 @@ public final class Database {
 
     public static List<Pergunta> getPerguntas() {
         return perguntas;
+    }
+
+    public static String getNavegadorUrl() {
+        return navegadorUrl;
+    }
+
+    public static void setNavegadorUrl(String navegadorUrl) {
+        Database.navegadorUrl = navegadorUrl;
     }
 
     public static Pergunta getProximaPergunta() {

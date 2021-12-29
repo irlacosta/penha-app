@@ -18,13 +18,15 @@ public class AdapterDicas extends RecyclerView.Adapter<AdapterDicas.DicaViewHold
 
     private List<Dica> listaDicas = new ArrayList<>();
 
-    public AdapterDicas() { }
+    public AdapterDicas(List<Dica> listaDicas) {
+        this.listaDicas = listaDicas;
+    }
 
     @NonNull
     @Override
     public AdapterDicas.DicaViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
         View itemList = LayoutInflater.from(viewGroup.getContext()).
-                inflate(R.layout.item_categoria_dica, viewGroup, false); //pode ser usado aqui card ou list
+                inflate(R.layout.fragment_card_dica, viewGroup, false);
 
         return new DicaViewHolder(itemList);
     }
@@ -32,8 +34,8 @@ public class AdapterDicas extends RecyclerView.Adapter<AdapterDicas.DicaViewHold
     @Override
     public void onBindViewHolder(@NonNull AdapterDicas.DicaViewHolder dicaViewHolder, int i) {
         Dica d = listaDicas.get(i);
-        dicaViewHolder.assunto.setText(d.getAssuntoDica());
-        dicaViewHolder.descricao.setText(d.getDescricaoDica());
+        dicaViewHolder.dicaFrase.setText(d.getFraseDica());
+        dicaViewHolder.saibaMais.setText(d.getSaibaMaisDica());
     }
 
     @Override
@@ -52,13 +54,13 @@ public class AdapterDicas extends RecyclerView.Adapter<AdapterDicas.DicaViewHold
     }
 
     public class DicaViewHolder extends RecyclerView.ViewHolder {
-        TextView assunto;
-        TextView descricao;
+        TextView dicaFrase;
+        TextView saibaMais;
 
         public DicaViewHolder(View itemView) {
             super(itemView);
-            assunto = itemView.findViewById(R.id.txt_item_card_assunto_dica);
-            descricao = itemView.findViewById(R.id.txt_item_card_descricao_dica);
+            dicaFrase = itemView.findViewById(R.id.txt_card_frase_dica);
+            saibaMais = itemView.findViewById(R.id.txt_card_saiba_mais_dica);
         }
     }
 }

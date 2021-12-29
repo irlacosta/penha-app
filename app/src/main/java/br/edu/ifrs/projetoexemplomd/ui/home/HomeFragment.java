@@ -70,7 +70,7 @@ public class HomeFragment extends Fragment { //implements View.OnClickListener{ 
         card_quiz.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                SettingsFirebase.getNo("pergunta").addValueEventListener(new ValueEventListener() {
+                SettingsFirebase.getNo("perguntas").addValueEventListener(new ValueEventListener() {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                         List<Pergunta> perguntas = new ArrayList<>();

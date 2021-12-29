@@ -17,19 +17,6 @@
     <string name="menu_drawer_config">Configurações</string>
     <string name="menu_drawer_info">Sobre</string>
     <string name="menu_drawer_termos_de_uso">Termos de Uso</string>
-    <string name="termos_de_uso_fragment">Antes de prosseguir, leia os 14 principais itens abordados em nossos Termos de Uso:
-
-Todas as peças desta plataforma tratam-se de MODELOS INICIAIS e básicos que devem ser utilizados POR PROFISSIONAL HABILITADO - ADVOGADO para o seu cliente final, devendo ser revisados, adaptados ao caso concreto de acordo com fatos, provas, jurisprudência local, base legal atualizada e específica. SOB NENHUMA HIPÓTESE serão prestadas consultorias jurídicas.
-
-A utilização do aplicativo é gratuito e limitado a uma conta por pessoa/entidade - não é permitido mais de um cadastro por pessoa/entidade.
-Em qualquer plano você autoriza o uso do conteúdo das áreas de seu interesse quando você usa nossos Serviços, através da COLETA DE DADOS DA SUA PESQUISA e acessos aos modelos e autoriza o envio deste conteúdo ao seu e-mail.
-
-É responsabilidade do usuário certificar-se da VIGÊNCIA DA LEI e jurisprudência referida, bem como da adequação da peça à fase processual e riscos de improcedência. Não oferecemos garantia de que os modelos estão atualizados, adequados à legislação vigente ou qualquer responsabilidade pelo insucesso no uso dos modelos por qualquer razão, seja por se mostrarem inadequados, desatualizados ou impróprios ao caso específico.
-
-Antes de assinar esta plataforma, verifique se todas as peças de seu interesse estão disponíveis no campo de busca. Possíveis sugestões de inclusão de novos modelos serão analisadas, porém sem garantia de aceitação ou qualquer compromisso que serão disponibilizados.
-Você PODE utilizar o conteúdo desta plataforma exclusivamente para uso imediato em casos reais e concretos do seu cliente final, para fins profissionais no exercício da Advocacia no âmbito processual administrativo ou judicial.
-
-</string>
     <string name="menu_drawer_politica_privacidade">Políticas de Privacidade</string>
     <string name="txt_btn_login_acessar">Entrar</string>
     <string name="login_titulo">LOGIN</string>
@@ -44,29 +31,30 @@ Você PODE utilizar o conteúdo desta plataforma exclusivamente para uso imediat
     <string name="txt_nav_bottom_perfil">Perfil</string>
     <string name="txt_nav_bottom_settings">Configurações</string>
 
-    <string name="card_jogar">Quiz</string>
-    <string name="toolbar_onboard">Jogar</string>
-    <string name="card_jogar_second">Você está em um relacionamento abusivo? Descubra aqui!</string>
+    <string name="card_quiz">Quiz</string>
+    <string name="toolbar_onboard">Quiz</string>
+    <string name="card_quiz_second">Você está em um relacionamento abusivo? Descubra aqui!</string>
     <string name="card_dicas">Dicas</string>
     <string name="card_dicas_second">Informação e Apoio</string>
     <string name="card_mapa">Mapa</string>
     <string name="card_mapa_second">Locais para ajuda e apoio à mulher</string>
     <string name="card_telefones">Telefones</string>
     <string name="card_telefones_second">Telefones Úteis</string>
-    <string name="card_perfil">Perfil</string>
-    <string name="card_perfil_second">Configurações do seu perfil</string>
+    <string name="card_ongs">ONGs</string>
+    <string name="card_ongs_second">Encontre ONGs aqui</string>
 
     <string name="txt_adapter_list_telefone_local">Local</string>
     <string name="txt_adapter_list_telefone_endereco">Endereço</string>
     <string name="txt_adapter_list_telefone_ddd">DDD</string>
     <string name="txt_adapter_list_telefone_numero">Telefone</string>
-    <string name="txt_adapter_assunto_dica">Assunto</string>
-    <string name="txt_adapter_descricao_dica">Descrição</string>
-    <string name="btn_ler">Continuar Lendo</string>
-
+    <string name="txt_card_dica">Dica</string>
+    <string name="txt_saiba_mais_dica">Saiba mais...</string>
+    <string name="txt_card_ong">ONG</string>
+    <string name="txt_saiba_mais_ong">Saiba mais...</string>
 
     <string name="hello_onboard_fragment">Todos merecem um relacionamento seguro e saudável. Você sabe se seu relacionamento é saudável? Responda sim ou não para as seguintes questões para descobrir. \n\n
-        Certifique-se de marcar as caixas para registrar suas  respostas. No final, você descobrirá sua pontuação do Quiz .</string>
+        Certifique-se de marcar as caixas para registrar suas  respostas. No final, você descobrirá sua pontuação do Quiz.
+    </string>
     <string name="feedback_pontos">%d pontos</string>
     <string name="feedback_categoria1_titulo">Não se Preocupe!</string>
     <string name="feedback_categoria1_desc">Você obteve pontuação zero? Não se preocupe - é uma coisa boa! Parece que seu relacionamento está indo bem. Manter relacionamentos saudáveis dá trabalho - continue assim!</string>
@@ -80,7 +68,7 @@ Você PODE utilizar o conteúdo desta plataforma exclusivamente para uso imediat
     trabalhos! Mas em um relacionamento saudável, você não encontrará comportamentos abusivos.
     </string>
     <string name="feedback_categoria5_titulo">Relacionamento abusivo?</string>
-    <string name="feedback_categoria5_desc">Se você marcou cinco ou mais pontos, você definitivamente está vendo sinais de alerta e pode estar em um relacionamento abusivo. Lembre-se que a coisa mais importante é a sua segurança. Você não tem que lidar com isso sozinha. Procure ajuda e apoio nos telefones informados na seção ‘Telefones Úteis’ ou ainda na seção ‘Dicas’ deste aplicativo.</string>
+    <string name="feedback_categoria5_desc">Se você marcou cinco ou mais pontos, você definitivamente está vendo sinais de alerta e pode estar em um relacionamento abusivo. Lembre-se que a coisa mais importante é a sua segurança. Você não tem que lidar com isso sozinha. Procure ajuda e apoio nos telefones informados na seção ‘Telefones Úteis’, ou ainda na seção ‘Dicas’ ou ainda na seção ONG deste aplicativo.</string>
     <string name="positive_action">Sim</string>
     <string name="negative_action">Não</string>
 

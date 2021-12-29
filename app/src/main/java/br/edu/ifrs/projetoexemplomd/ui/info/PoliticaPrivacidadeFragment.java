@@ -10,13 +10,13 @@ import androidx.fragment.app.Fragment;
 
 import br.edu.ifrs.projetoexemplomd.R;
 
-public class InfoFragment extends Fragment {
+public class PoliticaPrivacidadeFragment extends Fragment {
 
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
 
-        View root = inflater.inflate(R.layout.fragment_sobre, container, false);
+        View root = inflater.inflate(R.layout.fragment_politica_privacidade, container, false);
         return root;
     }
 }

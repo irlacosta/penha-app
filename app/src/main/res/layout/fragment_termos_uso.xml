@@ -11,7 +11,18 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="8dp"
-        android:text="@string/termos_de_uso_fragment"
+        android:text="Antes de prosseguir, leia os 14 principais itens abordados em nossos Termos de Uso:
+
+Todas as peças desta plataforma tratam-se de MODELOS INICIAIS e básicos que devem ser utilizados POR PROFISSIONAL HABILITADO - ADVOGADO para o seu cliente final, devendo ser revisados, adaptados ao caso concreto de acordo com fatos, provas, jurisprudência local, base legal atualizada e específica. SOB NENHUMA HIPÓTESE serão prestadas consultorias jurídicas.
+
+A utilização do aplicativo é gratuito e limitado a uma conta por pessoa/entidade - não é permitido mais de um cadastro por pessoa/entidade.
+Em qualquer plano você autoriza o uso do conteúdo das áreas de seu interesse quando você usa nossos Serviços, através da COLETA DE DADOS DA SUA PESQUISA e acessos aos modelos e autoriza o envio deste conteúdo ao seu e-mail.
+
+É responsabilidade do usuário certificar-se da VIGÊNCIA DA LEI e jurisprudência referida, bem como da adequação da peça à fase processual e riscos de improcedência. Não oferecemos garantia de que os modelos estão atualizados, adequados à legislação vigente ou qualquer responsabilidade pelo insucesso no uso dos modelos por qualquer razão, seja por se mostrarem inadequados, desatualizados ou impróprios ao caso específico.
+
+Antes de assinar esta plataforma, verifique se todas as peças de seu interesse estão disponíveis no campo de busca. Possíveis sugestões de inclusão de novos modelos serão analisadas, porém sem garantia de aceitação ou qualquer compromisso que serão disponibilizados.
+Você PODE utilizar o conteúdo desta plataforma exclusivamente para uso imediato em casos reais e concretos do seu cliente final, para fins profissionais no exercício da Advocacia no âmbito processual administrativo ou judicial.
+"
         android:textAlignment="center"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
