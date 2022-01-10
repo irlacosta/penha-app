@@ -10,7 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="30dp"
         android:layout_marginEnd="8dp"
         android:text="Aplicativo desenvolvido para a disciplina de Programação para Web do curso superior de Tecnologia em Sistemas para Internet do Instituto Federal de Ciência e Tecnologia - IFRS Campus Porto Alegre - RS. \n\n
         Este é um aplicativo para apoio ao enfrentamento da violência, assédio ou atrevimentos cometidos por homens.\n\n
@@ -24,13 +24,14 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
 
-    <Button
+    <TextView
         android:id="@+id/btn_sobre"
         android:layout_width="329dp"
         android:layout_height="122dp"
         android:layout_marginTop="40dp"
         android:text="Obrigada por utilizar nosso App! "
         android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

@@ -227,7 +227,7 @@
                     android:layout_height="64dp"
                     android:layout_gravity="center"
                     android:layout_marginTop="8dp"
-                    android:src="@drawable/ic_phone"
+                    android:src="@drawable/ic_home"
                     android:tint="@color/colorPrimaryDark" />
 
                 <TextView
