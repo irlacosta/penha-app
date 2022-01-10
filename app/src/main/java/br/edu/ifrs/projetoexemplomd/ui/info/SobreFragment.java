@@ -25,10 +25,6 @@ public class SobreFragment extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        bind(view);
     }
 
-    public void bind(View view) {
-        sobreBtn = view.findViewById(R.id.btn_sobre);
-    }
 }

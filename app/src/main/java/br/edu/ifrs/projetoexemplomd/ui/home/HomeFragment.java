@@ -38,6 +38,7 @@ public class HomeFragment extends Fragment { //implements View.OnClickListener{ 
     private CardView card_dicas;
     private CardView card_telefones;
     private CardView card_mapa;
+    private CardView card_ong;
     private NavController navController;
 
     //método que caracteriza o fragmento onCreateView
@@ -63,6 +64,7 @@ public class HomeFragment extends Fragment { //implements View.OnClickListener{ 
         card_dicas = view.findViewById(R.id.card_two);
         card_mapa = view.findViewById(R.id.card_three);
         card_telefones = view.findViewById(R.id.card_four);
+        card_ong = view.findViewById(R.id.card_five);
     }
 
     private void setClick() {
@@ -105,6 +107,12 @@ public class HomeFragment extends Fragment { //implements View.OnClickListener{ 
             @Override
             public void onClick(View v) {
                 navController.navigate(R.id.nav_maps);
+            }
+        });
+        card_ong.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                navController.navigate(R.id.nav_ong);
             }
         });
     }

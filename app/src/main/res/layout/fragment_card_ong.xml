@@ -25,7 +25,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/txt_card_ong"
-            android:textSize="20dp"/>
+            android:textSize="20dp"
+            android:textStyle="bold"/>
 
         <TextView
             android:id="@+id/txt_card_saiba_mais_ong"
